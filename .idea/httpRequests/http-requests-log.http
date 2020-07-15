@@ -1,0 +1,40 @@
+POST http://localhost:8080/api/dif/alg
+
+###
+
+GET http://localhost:9494/api/qa
+
+###
+
+POST http://localhost:8080/api/dif/alg
+
+###
+
+POST http://localhost:8080/api/ai/tokenizer
+
+###
+
+GET http://localhost:9494/api/qa
+
+###
+
+GET http://localhost:8080/api/qa
+
+###
+
+POST http://localhost:8080/api/dif/alg
+
+<> 2020-06-28T063036.404.json
+
+###
+
+POST http://localhost:8080/api/ai/tokenizer
+
+<> 2020-06-28T062957.404.json
+
+###
+
+POST http://localhost/api/ai/tokenizer
+
+###
+

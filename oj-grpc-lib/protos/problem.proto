@@ -1,0 +1,55 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "cn.yaminets.grpclib";
+option java_outer_classname = "ProblemProto";
+option objc_class_prefix = "yami";
+
+package problem;
+
+service ProblemService {
+    rpc GetProblem (ProblemRequest) returns (ProblemReply) {};
+}
+
+message ProblemRequest{
+    int32 page = 1;
+    int32 limit = 2;
+}
+
+message ResultMessage{
+    int32 errCode = 1;
+    string message = 2;
+}
+
+
+message ProblemReply{
+    ResultMessage resultMessage = 1;
+    repeated ProblemEntity problemList = 2;
+    int32 pageSize = 3;
+}
+
+message ProblemEntity{
+    int64 id = 1;
+    string pid = 2;
+    string title = 3;
+    string content = 4;
+    repeated Tags tags = 5;
+    repeated AnswerEntity answers = 6;
+    Difficulty difficulty = 7;
+}
+
+message Difficulty{
+    int64 id = 1;
+    string difficultyString = 2;
+}
+
+message Tags{
+    int64 id = 1;
+    int32 tagInt  = 2;
+    string tagString = 3;
+}
+
+message AnswerEntity{
+    int64 id = 1;
+    string answerString = 3;
+}
