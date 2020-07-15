@@ -11,7 +11,7 @@ import java.util.List;
 
 /**
  * @program: birtu-oj-knowledge-graph-master 2
- * @description: 登入功能实现
+ * @description: 登入功能实现,接口
  * @author: Gauss
  * @date: 2020-07-14 16:33
  **/
